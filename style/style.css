@@ -2,13 +2,97 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
+    
 }
 
 body {
     background-color: #FFF8F3;
-    background-image: url(../img/pngwing.com\ \(1\).png);
+    background-image: url(../img/bg3.png);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white;
+    font-family: 'Geo', sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+.container {
+    width: 20.625rem;
+    margin: auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr 2fr 30rem;
+    gap: 20px;
+}
+.input {
+    width: 75%;
+    height: 50%;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+.btn {
+    height: 50%;
+    width: 25%;
+    border-radius: 40%;
+    background-color: #FFEDDB;
+    background-image: url(../img/bg2.png);
+    background-position:center;
+    background-size:50px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+.btn:hover {
+    background-color: #b38a61;
+}
+
+.liste {
+    background-image: url(../img/çerçeve.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    overflow: auto;
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+
+}
+.liste_ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.liste_ul_li_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 2rem;
+    background-color: #FFEDDB;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+
+}
+.başlık {
+    text-align: center;
+}
+.girdi {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
