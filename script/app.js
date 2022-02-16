@@ -2,9 +2,14 @@ const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const liste_ul = document.querySelector(".liste_ul");
 
-btn.addEventListener("click", () => {
+window.addEventListener("load", () => {
+  btn.addEventListener("click",ekleme);
+});
+
+function ekleme(event) {
   let img = document.createElement("img");
   img.setAttribute("src", "./img/red.png");
+  img.setAttribute("class", "img");
   img.style.width = "20px";
 
   let p = document.createElement("p");
@@ -16,5 +21,7 @@ btn.addEventListener("click", () => {
   li.appendChild(img);
   li.appendChild(p);
   liste_ul.appendChild(li);
-});
+};
+
+
 
