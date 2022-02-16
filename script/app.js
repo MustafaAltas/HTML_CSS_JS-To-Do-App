@@ -21,13 +21,15 @@ function eklemeÇıkarma(event) {
   li.appendChild(img);
   li.appendChild(p);
   liste_ul.appendChild(li);
+  input.value = "";
 
-  let images = document.querySelectorAll(".img");
+  let lil = document.querySelectorAll(".liste_ul_li");
 
-  images.forEach((e) => {
+
+  lil.forEach((e) => {
     e.addEventListener("click",(a) => {
-      a.target.parentElement.remove();
+      a.target.remove();
     })
   })
 
-}
+};
