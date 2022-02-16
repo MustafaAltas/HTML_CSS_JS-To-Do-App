@@ -85,7 +85,13 @@ h1 {
     border-radius: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: .8rem;
+    font-size: 1.2rem;
+}
+.liste_ul_li:hover {
+    text-decoration: line-through;
+    background-color: #FF1700;
+    box-shadow: 10px 10px 10px rgb(17, 17, 17);
+
 }
 /* .liste_ul_li_div {
     display: flex;

@@ -8,9 +8,9 @@ window.addEventListener("load", () => {
 
 function eklemeÇıkarma(event) {
   let img = document.createElement("img");
-  img.setAttribute("src", "./img/red.png");
+  img.setAttribute("src", "./img/onay.png");
   img.setAttribute("class", "img");
-  img.style.width = "20px";
+  img.style.width = "30px";
 
   let p = document.createElement("p");
   p.appendChild(document.createTextNode(input.value));
@@ -28,8 +28,11 @@ function eklemeÇıkarma(event) {
 
   lil.forEach((e) => {
     e.addEventListener("click",(a) => {
-      a.target.remove();
+      if (a.target.className === "img") {
+        a.target.parentElement.remove();
+      }
     })
   })
+
 
 };
