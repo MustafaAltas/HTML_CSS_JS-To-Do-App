@@ -74,9 +74,20 @@ h1 {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
+    gap:2rem;
 }
-.liste_ul_li_div {
+.liste_ul_li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 2rem;
+    background-color: #FFEDDB;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+/* .liste_ul_li_div {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -87,7 +98,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: .8rem;
 
-}
+} */
 .başlık {
     text-align: center;
 }
