@@ -3,10 +3,10 @@ const btn = document.getElementById("btn");
 const liste_ul = document.querySelector(".liste_ul");
 
 window.addEventListener("load", () => {
-  btn.addEventListener("click",ekleme);
+  btn.addEventListener("click", eklemeÇıkarma);
 });
 
-function ekleme(event) {
+function eklemeÇıkarma(event) {
   let img = document.createElement("img");
   img.setAttribute("src", "./img/red.png");
   img.setAttribute("class", "img");
@@ -21,7 +21,13 @@ function ekleme(event) {
   li.appendChild(img);
   li.appendChild(p);
   liste_ul.appendChild(li);
-};
 
+  let images = document.querySelectorAll(".img");
 
+  images.forEach((e) => {
+    e.addEventListener("click",(a) => {
+      a.target.parentElement.remove();
+    })
+  })
 
+}
